@@ -1,0 +1,11 @@
+@layer base {
+  html {
+    @apply bg-white text-sm;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply inline-block h-[35px] w-full border-0 bg-grayTheme-500 px-5 placeholder-black placeholder-opacity-100;
+  }
+}
