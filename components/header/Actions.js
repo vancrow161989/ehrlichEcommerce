@@ -1,6 +1,8 @@
+import CartSummary from "../cart/CartSummary.js";
+
 class Actions extends HTMLElement {
   connectedCallback() {
-    const content = DOMPurify.sanitize(`
+    const content = `
       <div class="header-actions">
         <ul class="list-icons flex items-center gap-6">
           <li>
@@ -8,10 +10,11 @@ class Actions extends HTMLElement {
               <img src="./assets/images/bx_bx-user.svg" alt="user" />
             </a>
           </li>
-          <li>
-            <a class="hover:opacity-50" href="#">
+          <li class="relative">
+            <a class="hover:opacity-50 cursor-pointer" onclick="showCart(this)">
               <img src="./assets/images/bx_bx-shopping-bag.svg" alt="bag" />
             </a>
+            <app-cartsummary></app-cartsummary>
           </li>
           <li>
             <a class="hover:opacity-50" href="#">
@@ -44,7 +47,7 @@ class Actions extends HTMLElement {
           </li>
         </ul>
       </div>
-    `);
+    `;
     this.innerHTML = content;
   }
 }

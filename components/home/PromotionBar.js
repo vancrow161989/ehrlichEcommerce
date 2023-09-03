@@ -1,6 +1,6 @@
 class PromotionBar extends HTMLElement {
   connectedCallback() {
-    const content = DOMPurify.sanitize(`
+    const content = `
       <div class="promotion-bar bg-grayTheme-500 py-3">
         <div class="container">
           <ul class="promotion-list flex items-center justify-between gap-6">
@@ -37,7 +37,7 @@ class PromotionBar extends HTMLElement {
           </ul>
         </div>
       </div>
-    `);
+    `;
 
     this.innerHTML = content;
   }

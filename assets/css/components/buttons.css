@@ -1,6 +1,6 @@
 @layer components {
   .btn {
-    @apply inline-block bg-primary-500 px-6 py-3 text-center text-themeSm font-semibold uppercase text-white hover:opacity-70;
+    @apply inline-block bg-primary-500 px-6 py-3 text-center text-themeSm font-semibold uppercase text-white hover:bg-gray-600;
   }
 
   .btn-primary {
@@ -9,6 +9,10 @@
 
   .btn-secondary {
     @apply bg-white text-black hover:bg-gray-300 hover:text-black;
+  }
+
+  .btn-simple {
+    @apply bg-gray-200 text-gray-700;
   }
 
   .btn-danger {

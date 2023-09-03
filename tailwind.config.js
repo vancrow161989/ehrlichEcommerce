@@ -33,6 +33,9 @@ module.exports = {
       colors: {
         grayTheme: {
           500: "#f2f2f2"
+        },
+        grayThemeS: {
+          500: "#f7f7f7"
         }
       },
       fontSize: {
