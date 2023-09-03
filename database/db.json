@@ -40,11 +40,11 @@
     "cartItems": [
       {
         "id": 5,
-        "quantity": 7
+        "quantity": 8
       },
       {
         "id": 3,
-        "quantity": 3
+        "quantity": 6
       },
       {
         "id": 4,
@@ -55,7 +55,7 @@
         "quantity": 6
       }
     ],
-    "cartTotalAmount": 1119.93,
-    "cartTotalQuantity": 23
+    "cartTotalAmount": 1275.93,
+    "cartTotalQuantity": 27
   }
 }

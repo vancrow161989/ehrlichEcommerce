@@ -26,7 +26,7 @@ const productHtml = allProducts
         <div class="add-to-cart-wrap mt-6">
           <div class="mb-4 flex items-center">
             <button
-              class="btn btn-simple btn-sm h-10 w-4/12 text-center"
+              class="btn btn-simple btn-sm h-10 w-4/12 text-center hover:text-white"
               type="button"
               onclick="decrementQuantity(${id})">
               ${IconMinus("h-4 w-4 mx-auto")}
@@ -37,7 +37,7 @@ const productHtml = allProducts
               1
             </div>
             <button
-              class="btn btn-simple btn-sm h-10 w-4/12 text-center"
+              class="btn btn-simple btn-sm h-10 w-4/12 text-center hover:text-white"
               type="button"
               onclick="incrementQuantity(${id})">
               ${IconPlus("h-4 w-4 mx-auto")}
